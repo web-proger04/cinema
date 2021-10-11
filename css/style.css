@@ -431,4 +431,26 @@ a {
 		margin-left: 20px;
 		cursor: pointer;
 	}
+
+	.wrapper {
+		position: relative;
+	}
+
+	.header__menu {
+		display: block;
+		flex-direction: column;
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    margin-left: 55px;
+	    margin-top: 55px;
+	    background-color: #621402;
+	    padding: 10px;
+	    border-radius: 5px;
+	    z-index: 1;
+	}
+
+	.header__menu-item {
+		margin-bottom: 10px;
+	}
 }
