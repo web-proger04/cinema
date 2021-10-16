@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -48,7 +49,9 @@
 				<img src="img/avatar.png" alt="Марсель" class="avatar">
 			</div>	
 			</div>
+
 			<div class="header__film">
+
 				<div class="flex__header__film">
 					<div class="header__info">
 						<small class="info__small">Avengers: Infinity War</small>
@@ -58,7 +61,7 @@
 						</p>
 					</div>
 					<div class="header__turntable">
-						<a href="https://youtu.be/UsnDPok1ZOU" target="_blank">
+						<a data-fancybox="video-gallery" data-src="https://youtu.be/UsnDPok1ZOU" href="#" target="_blank">
 							<img src="img/play-button.svg" alt="turntable">
 						</a>
 					</div>
@@ -76,7 +79,7 @@
 								</span>
 							</div>	
 						</div>
-					</div>	
+				</div>
 			</div>
 			<div class="session">
 				<div class="container">
@@ -340,6 +343,7 @@
         </div>
  	</div>
  </div>
+ <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
  <script src="js/main.js"></script>
 </body>
 </html>

@@ -93,6 +93,10 @@ a {
 	margin-left: 11px;
 }
 
+.wrapper__content {
+	display: flex;
+}
+
 .header__film {
 	margin-top: 90px;
     margin-bottom: 70px;
@@ -312,6 +316,7 @@ a {
 	align-items: center;
 	margin-top: 22px;
 	margin-bottom: 38px;
+	flex-wrap: wrap;
 }
 
 .legend-label {
@@ -349,6 +354,7 @@ a {
 
 .button {
 	display: inline-block;
+	width: 253.5px;;
 	height: 70px;
 	border-radius: 5px;
 	color: #fff;
@@ -437,7 +443,7 @@ a {
 	}
 
 	.header__menu {
-		display: block;
+		display: none;
 		flex-direction: column;
 	    position: absolute;
 	    left: 0;
@@ -450,7 +456,68 @@ a {
 	    z-index: 1;
 	}
 
+	.is-open {
+		display: block !important;
+	}
+
 	.header__menu-item {
 		margin-bottom: 10px;
+	}
+
+	.header__menu-item:last-child {
+		margin-bottom: 0px;
+	}
+
+	.flex__header__film {
+		flex-direction: column;
+	}
+
+	.header__turntable {
+		margin-top: 40px;
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
+
+@media (max-width: 590px) {
+	.container {
+		max-width: 450px;
+	}
+	.info__description {
+		width: 470px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		max-width: 380px;
+	}
+
+	.data__item {
+		width: 85px;
+	}
+
+	.flex-price {
+		flex-direction: column;
+	}
+
+	.button {
+		margin-top: 30px;
+	}
+
+	.info__description {
+		width: 350px;
+	}
+
+	.session__clock {
+		order: 2;
+    	flex-basis: 40%;
+	}
+
+}
+
+@media (max-width: 400px) {
+	.flex__items {
+		flex-wrap: wrap;
 	}
 }
