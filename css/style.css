@@ -514,10 +514,60 @@ a {
     	flex-basis: 40%;
 	}
 
+	.price-tag {
+		font-size: 35px;
+	} 
 }
 
 @media (max-width: 400px) {
+	.container {
+		max-width: 350px;
+	}
+
 	.flex__items {
 		flex-wrap: wrap;
 	}
+
+	.legend-label:last-child {
+    	margin-top: 15px;
+    }
+
+    .data__item:nth-child(1) {
+    	margin-bottom: 15px;
+    }
+
+    .data__item:nth-child(2) {
+    	margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 370px) {
+	.container {
+		max-width: 90%;   /*слева и справа по 5%*/
+	}
+
+	.info__description {
+		width: 300px;
+		font-size: 14px;
+	}
+
+	.data__item {
+		margin: 0;
+	}
+
+
+
+	.data__item:nth-child(1) {
+    	margin-right: 15px;
+    }
+
+    .data__item:nth-child(3) {
+    	margin-right: 15px;
+    }
+}
+
+@media (max-width: 326px) {
+	.data__item:nth-child(4) {
+    	margin-top: 15px;
+    }
 }
